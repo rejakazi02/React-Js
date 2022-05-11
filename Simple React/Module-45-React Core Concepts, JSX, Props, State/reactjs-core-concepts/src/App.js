@@ -8,39 +8,51 @@ const singer2 = { name: 'Eva Rahman ', job : 'Singer2'}
 
 const singerStyle ={
   color: 'blue',
-  backgroundColor: 'white'
+  backgroundColor: 'white',
+  margin: '5%'
 }
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>JSX</h1>
-       <div className="contrainer">
-
-         <h3>hello dud ds</h3>
-       </div>
-
-       <div className="music">
-         <p style={singerStyle}>Id: {id}</p>
-         <p >Name: {singer1.name} Job: {singer1.job}</p>
-         <p>Name: {singer2.name} Job: {singer2.job}</p>
-       </div>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Person></Person>
+    <Friend></Friend>
+    <Person></Person>
+    <Friend></Friend>
+    <Person></Person>
+    <Friend></Friend>
+    <Person></Person>
+    <Friend></Friend>
+    <Person></Person>
+    <Friend></Friend>
+    <Friend></Friend>
+    
     </div>
   );
 }
+
+function Person() {
+  return (
+
+    <div className="person">
+      <h1>Name: Reja</h1>
+      <p style={singerStyle}>Job: Intern</p>
+    </div>
+  )
+  
+}
+
+
+function Friend() {
+  return (
+
+    <div className="person1">
+      <h1>Name: Habu</h1>
+      <p style={singerStyle}>Job: Intern</p>
+    </div>
+  )
+  
+}
+
 
 export default App;

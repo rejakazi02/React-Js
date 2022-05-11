@@ -47,3 +47,20 @@
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
 }
+
+.person {
+  background-color: darkkhaki;
+  border: 3px solid rebeccapurple;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 20px;
+  
+}
+.person1 {
+  background-color: rgb(117, 115, 87);
+  border: 3px solid rebeccapurple;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 20px;
+  
+}
