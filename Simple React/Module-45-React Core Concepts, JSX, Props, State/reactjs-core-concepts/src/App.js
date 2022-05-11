@@ -4,6 +4,12 @@ import './App.css';
 const id = 555;
 const singer1 = { name: 'Dr. Mahfuzur ', job : 'Singer1'} 
 const singer2 = { name: 'Eva Rahman ', job : 'Singer2'} 
+// New style property in react 
+
+const singerStyle ={
+  color: 'blue',
+  backgroundColor: 'white'
+}
 
 function App() {
   return (
@@ -17,8 +23,8 @@ function App() {
        </div>
 
        <div className="music">
-         <p>Id: {id}</p>
-         <p>Name: {singer1.name} Job: {singer1.job}</p>
+         <p style={singerStyle}>Id: {id}</p>
+         <p >Name: {singer1.name} Job: {singer1.job}</p>
          <p>Name: {singer2.name} Job: {singer2.job}</p>
        </div>
         <p>
