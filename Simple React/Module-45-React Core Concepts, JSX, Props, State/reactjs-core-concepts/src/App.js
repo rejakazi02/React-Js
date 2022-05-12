@@ -15,27 +15,24 @@ const singerStyle ={
 function App() {
   return (
     <div className="App">
-    <Person></Person>
-    <Friend></Friend>
-    <Person></Person>
-    <Friend></Friend>
-    <Person></Person>
-    <Friend></Friend>
-    <Person></Person>
-    <Friend></Friend>
-    <Person></Person>
-    <Friend></Friend>
-    <Friend></Friend>
-    
+    <Person name= 'Reja'></Person>
+    <Friend name= 'Tanbir' job= 'Developer'></Friend>
+    <Person name= 'Rizvi'></Person>
+    <Friend name= 'Jim' job= 'Developer'></Friend>
+    <Person name= 'Habib'></Person>
+    <Friend name= 'Rahad' job= 'Developer'></Friend>
+    <Person name= 'Toasin'></Person>
+    <Friend name= 'Imran' job= 'Developer'></Friend>
+   
     </div>
   );
 }
 
-function Person() {
+function Person(props) {
   return (
 
     <div className="person">
-      <h1>Name: Reja</h1>
+      <h1>{props.name}</h1>
       <p style={singerStyle}>Job: Intern</p>
     </div>
   )
@@ -43,12 +40,12 @@ function Person() {
 }
 
 
-function Friend() {
+function Friend(props) {
   return (
 
     <div className="person1">
-      <h1>Name: Habu</h1>
-      <p style={singerStyle}>Job: Intern</p>
+      <h1>{props.name}</h1>
+      <p style={singerStyle}>Job: {props.job}</p>
     </div>
   )
   
