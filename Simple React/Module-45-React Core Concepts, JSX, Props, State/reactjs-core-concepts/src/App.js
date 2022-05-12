@@ -13,16 +13,24 @@ const singerStyle ={
 }
 
 function App() {
+
+  const nayoks = ['Rubel', 'BappaRaz', 'Razzak','Bappy'];
+
+ 
   return (
     <div className="App">
-    <Person name= 'Reja'></Person>
+
+{
+    nayoks.map(nayok => <Person name= { nayok }></Person>)
+  }
+    {/* <Person name= 'Reja'></Person>
     <Friend name= 'Tanbir' job= 'Developer'></Friend>
     <Person name= 'Rizvi'></Person>
     <Friend name= 'Jim' job= 'Developer'></Friend>
     <Person name= 'Habib'></Person>
     <Friend name= 'Rahad' job= 'Developer'></Friend>
     <Person name= 'Toasin'></Person>
-    <Friend name= 'Imran' job= 'Developer'></Friend>
+    <Friend name= 'Imran' job= 'Developer'></Friend> */}
    
     </div>
   );
