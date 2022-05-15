@@ -9,7 +9,7 @@ function App() {
     <div className="App">
      {/* <LoadCountries></LoadCountries> */}
      <Country></Country>
-     <Person></Person>
+     {/* <Person></Person> */}
     </div>
   );
 }
